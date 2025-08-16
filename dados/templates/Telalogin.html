@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/TelaEstiloLogin.css' %}">
+    <title>Tela de Login</title>
+</head>
+<body>
+        <form>
+            <img src="{% static 'img/LogoAcadia.png' %}" alt="LogoAcadia">
+            <input type="email" id="email" placeholder="Digite seu email ou matrícula" required>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+            <select id="instituicao" name="instituicao" required>
+                <option value="" disabled selected>Selecione sua instituição</option>
+                <option value="UNIFIP">UNIFIP</option>
+                <option value="UFCG">UFCG</option>
+                <option value="UNIPLAN">UNIPLAN</option>
+            </select>
+            <section class="bloco_quadradoEtexto"> 
+                <section class="quadrado" onclick="mudarCor(this)"> </section>
+                <span>Mantenha-me conectado</span>
+            </section>
+            <button type="submit"> Acessar </button>
+            <p class="textoRecuperarSenha"> Esqueceu a senha? </p>
+        </form>
+
+    <script src="{% static 'js/TelaInicialscript.js' %}"></script>
+</body>
+</html>
+
