@@ -8,11 +8,11 @@
     <title>Tela de Login</title>
 </head>
 <body>
-        <form method="POST">
+        <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             <img src="{% static 'img/LogoAcadia.png' %}" alt="LogoAcadia">
-            <input type="email" id="email" placeholder="Digite seu email ou matrícula" required>
-            <input type="password" id="senha" placeholder="Digite sua senha" required>
+            <input type="email" id="email" placeholder="Digite seu email ou matrícula" name='email' required>
+            <input type="password" id="senha" placeholder="Digite sua senha" name='senha' required>
             <select id="instituicao" name="instituicao" required>
                 <option value="" disabled selected>Selecione sua instituição</option>
                 <option value="UNIFIP">UNIFIP</option>
