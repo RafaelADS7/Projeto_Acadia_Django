@@ -27,3 +27,6 @@ def login_view(request):
 
 def home_view(request):
     return render(request, 'Telahome.html')
+
+def perfil_view(request):
+    return render(request, 'Telaperfil.html')

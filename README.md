@@ -11,3 +11,12 @@ O projeto Acadia conta atualmente com uma funcionalidade básica de login de usu
 
 Observações:
 Neste momento, não há sistema de recuperação de senha implementado. O processo de cadastro de novos usuários é exclusivo da administração do projeto,ou seja, apenas a instituição responsável pode registrar novos perfis no sistema, garantindo maior controle e segurança sobre os acessos.
+
+
+
+
+reenviar novos commit 
+
+1 git add .
+2 git commit -m "Nova atualização"
+3 git push

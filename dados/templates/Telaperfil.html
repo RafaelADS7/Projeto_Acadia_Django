@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/TelaPerfilEstilo.css' %}">
+    
+    <title> Perfil </title>
+</head>
+<body>
+    
+    <main>
+       <header> 
+           <img src="{% static 'img/menu_azul.png' %}" class="imagensTopo" id="menuIcon" alt="Menu" > 
+           <h3> Perfil </h3>   
+           <img src="{% static 'img/browse.png' %}" class="imagensTopo" alt="Navegar">    
+       </header>
+
+       <nav class="hidden" id="menu">
+           <ul>
+               <li>
+                   <img src="{% static 'img/menu_azul.png' %}" class="imagensTopo" id="menuIconNav" alt="Menu" > 
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 1">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 2">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 3">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 4">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 5">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 6">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 7">
+               </li>
+               <li>
+                   <img src="{% static 'img/Personagem.png' %}" alt="Avatar 8">
+               </li>
+           </ul>
+       </nav>
+
+       
+       <section class="geral">
+           <section class="bloco_topo"> 
+               <img class="imagem_EU" src="{% static 'img/EU.jpg' %}" alt="Foto de Perfil de Rafael">
+               <h1>Rafael Barbosa Ramos</h1>
+               <h5>Análise e Desenvolvimento de Sistemas - 4° Período</h5>
+               <button class="matricula"> Matrícula: 123456.2023.2 </button>
+           </section>
+
+           <section class="bloco_numeros"> 
+               <section class="botoes_de_informacoes">
+                   <button class="informacoes">
+                       <p>CRE</p>
+                       <p style="color: #1976D2; margin-top: 0.1rem;"><strong>8.83</strong></p>
+                   </button>
+                   <button class="informacoes">
+                       <p>Disciplinas</p>
+                       <p style="color: #1976D2; margin-top: 0.1rem;"><strong>34/40</strong></p>
+                   </button>
+                   <button class="informacoes">
+                       <p>Horas</p>
+                       <p style="color: #1976D2; margin-top: 0.1rem;"><strong>1500/2100</strong></p>
+                   </button>
+               </section>
+               
+           </section>
+
+           <section class="bloco_conquista"> 
+               <div class="headers_divs">
+                   <div class="headers_titulos">
+                       <img src="{% static 'img/trophy.png' %}" alt="Troféu">
+                       <h4>Conquistas</h4>
+                   </div>
+                   <a href=""  style="color: #1976D2; text-decoration: none;" >Ver mais</a>
+               </div>
+               <button class="botoes_conquistas">
+                   <img src="{% static 'img/military_tech.png' %}" alt="Medalha">
+                   <p>Top 10%</p>
+               </button>
+               <button class="botoes_conquistas">
+                   <img src="{% static 'img/award_star.png' %}" alt="Estrela">
+                   <p>Excelência</p>
+               </button>
+               <button class="botoes_conquistas">
+                   <img src="{% static 'img/done_all.png' %}" alt="Verificado">
+                   <p>Presença 100%</p>
+               </button>
+           </section>
+
+           <section class="bloco_desempenho_academico"> 
+               <div class="headers_divs">
+                   <div class="headers_titulos">
+                       <img src="{% static 'img/trending_up.png' %}" alt="Gráfico subindo">
+                       <h4>Desempenho Acadêmico</h4>
+                   </div>
+                   <a href="#" style="color: #1976D2; text-decoration: none;">Detalhes</a>
+               </div>
+               <div>
+                   <div>
+                       <div class="headers_divs">
+                           <p>CRE Geral</p>
+                           <p>8.83/10</p>
+                       </div>
+                       <img class="imagen1_porcentagem" src="{% static 'img/Rectangle 504.png' %}" alt="Barra de progresso CRE">
+                   </div>
+                   
+                   <div>
+                       <div class="headers_divs">
+                           <p>Frequência</p>
+                           <p>98%</p>
+                       </div>
+                       <img class="imagen2_porcentagem" src="{% static 'img/Rectangle 505.png' %}" alt="Barra de progresso Frequência">
+                   </div>
+
+                   <div>
+                       <div class="headers_divs">
+                           <p>Progesso Curricular</p>
+                           <p>80%</p>
+                       </div>
+                       <img class="imagen3_porcentagem" src="{% static 'img/Rectangle 506.png' %}" alt="Barra de progresso curricular">
+                   </div>
+               </div>
+           </section>
+
+           <section class="bloco_dados_pessoais">
+               <div class="headers_divs">
+                   <div class="headers_titulos">
+                       <img src="{% static 'img/person_edit.png' %}" alt="Editar pessoa">
+                       <h4>Dados Pessoais</h4>
+                   </div>
+                   <a href="" style="color: #1976D2; text-decoration: none;">Editar</a>
+               </div>
+               <article>
+                   <div>
+                       <p style="color: #8c8686;">Email</p>
+                       <p style="color: #8c8686;">Telefone</p>
+                       <p style="color: #8c8686;">Data Nasc.</p>
+                       <p style="color: #8c8686;">Endereço</p>
+                   </div>
+                   <div class="dados_pessoais">
+                       <p>FulanoSilva@ads.com.br</p>
+                       <p>(12) 93456-7890</p>
+                       <p>01/01/2001</p>
+                       <p>Rua 123, 45 - Patos - PB</p>
+                   </div>
+               </article>
+           </section>
+       </section>
+       
+    </main>
+       
+       <script src="{% static 'js/TelaHomescript.js' %}"></script>
+</body>
+</html>
