@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/TelaHomeEstilo.css' %}">
+    <title> Home </title>
+</head>
+<body>
+    
+    <main>
+       <header> 
+            <img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt="">
+            <h3> Home </h3>   
+            <img class="imagensTopo" src="{% static 'img/Personagem_azul.png' %}" alt="">
+       </header>
+
+       <nav class="hidden" id="menu">
+            <ul>
+                <li>
+                    <img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/Personagem.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/book_5.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/content_paste_search.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/school.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/account_balance.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/link.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/emoji_events.png' %}" alt="">
+                </li>
+                <li>
+                    <img src="{% static 'img/settings.png' %}" alt="">
+                </li>
+            </ul>
+        </nav>
+
+        
+       <section class="geral">
+            <section class="opcoes">
+                <button id="myButton1"> Feed </button>
+                <button id="myButton2"> Notificações </button>
+                <button id="myButton3"> Calendário </button>
+            </section>
+            <div id="tela1" class="escondido"> 
+                <div class="header_das_imagens">
+                    <button class="botao_para_clicar_no_perfil_da_cordenacao"> </button>
+                    <h5>Coordenação UNIFIP</h5>
+                    <br>
+                </div>
+                
+                <img class="imagem_feed" src="{% static 'img/imagem_feed.png' %}" alt="">
+                <p style="font-size: 0.9rem; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed diam lorem. Aenean sit amet condimentum dui. Phasellus posuere elit at gravida dapibus.</p>
+                <section class="bloco_interacoes_das_imagens_geral">
+                    <div class="bloco_interacoes_das_imagens1">
+                        <img class="imagens_interacoes" id="imagem_like" src="{% static 'img/like.png' %}" alt="">
+                        <img class="imagens_interacoes" id="imagem_deslike" src="{% static 'img/deslike.png' %}" alt="">
+                    </div>
+                    <div class="bloco_interacoes_das_imagens2">
+                        <img class="imagens_interacoes" id="imagem_comentarios" src="{% static 'img/comentarios.png' %}" alt="">
+                        <img class="imagens_interacoes" id="imagem_guardar" src="{% static 'img/guardar.png' %}" alt="">
+                    </div>
+                </section>
+                
+            </div>
+            <div id="tela2" class="escondidos">Tela 2: Notificações</div>
+            <div id="tela3" class="escondidos">Tela 3: Calendário</div>
+       </section>
+       
+       
+
+       <section></section>
+    </main>
+      
+
+    <script src="{% static 'js/TelaHomescript.js' %}"></script>
+</body>
+</html>
