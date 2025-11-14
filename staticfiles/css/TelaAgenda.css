@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para facilitar o controle de largura e altura */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C1C1C1;
+    left: 20px; /* Move o elemento 20px para a direita */
+}
+
+.geral {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    margin-top: 2%;
+}
+
+
+.imagensTopo {
+    width: 10%;
+    height: 40%;
+    margin: 2%;
+    cursor: pointer;
+}
+
+nav { 
+    position: absolute; /* Posiciona o <nav> dentro do <main> */
+    top: 20%; /* Alinha no topo do <main> */
+    left: 0; /* Gruda na lateral esquerda */
+    background-color: #1976D2;
+    width: 15%;
+    height: 80%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove os pontos da lista */
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+li {
+    margin-bottom: 10%;
+}
+
+
+.hidden {
+    display: none; /* O elemento não é exibido e também não ocupa espaço */
+    
+}
+
+
+
+.matricula {
+
+    border-radius: 35px;
+    background-color: #59abfd;
+    color: white;
+    width: 15.0rem;
+    margin: 7px auto;
+    white-space: nowrap;
+    padding: 0.2rem;
+
+}
+
+button {
+    cursor: pointer;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.bloco_topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h5 {
+    color: #8c8686;
+}
+
+.imagem_EU {
+    width: 20%;
+    height: auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+
+.informacoes {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    padding: 0.9rem;
+    width: 100%;
+    height: 50%;
+}
+
+/* BLOCO 1 */
+
+.bloco_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+
+
+/* BLOCO 2 */
+
+.botoes_da_semana {
+    padding: 0.5rem;
+}
+
+.bloco_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 3%;
+}
+
+/* BLOCO 3 */
+
+.bloco_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2.0rem;
+    margin-bottom: 3%;
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 0.5rem;
+}
+
+
+/* BLOCO 4 */
+
+.bloco_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.displey_block {
+    align-self: flex-start;
+}
+
+.informacoes_bloco_4 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    border: 2px solid #D9D9D9;
+    padding: 0.4rem;
+    border-radius: 15px;
+}
+
+.paragrafo_horario {
+    height: 35%;
+    background-color: #96389A;
+    border-radius: 7px;
+    padding: 0.2rem;
+}
+
+.article_anotacoes {
+    border: 2px solid #D9D9D9;
+    padding: 0.4rem;
+    border-radius: 15px;
+    margin-top: 3%;
+}
+
+.anotacoes1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes_atividade {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    gap: 2%;
+}
+
+.botao_de_marcacao_tarefa_feita {
+    border: 2px solid #1976D2;
+    width: 7%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.botao_estudo {
+    background-color: #0AA345;
+    width: 20%;
+}
+
+.botao_urgente {
+    background-color: #DD4646;
+    width: 20%;
+}
+
+
+
+.paragrafos_anotacoes {
+    margin-left: 3%;
+    text-align: justify;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.botao_pendente {
+    background-color: #FFEE00;
+    padding: 0.2rem;
+}
+
+.botao_concluido {
+    background-color: #0AA345;
+    padding: 0.2rem;
+}
+
+.footer_das_anotacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.botao_de_mais {
+    border-radius: 50%;
+    margin-top: 3%;
+    cursor: pointer;
+    width: 20%;
+    height: 40%;
+    background-color: #1976D2;
+}

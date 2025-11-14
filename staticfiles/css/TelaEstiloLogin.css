@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para facilitar o controle de largura e altura */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 320px;
+    height: 100%;
+    margin-bottom: 3%;
+}
+
+.quadrado {
+    width: 8%;
+    height: 100%;
+    border: 2px solid #C1C1C1;
+    border-radius: 5px;
+}
+
+img {
+    width: 80%;
+    height: 40%;
+    margin-bottom: 3%;
+}
+
+input {
+    width: 80%;
+    padding: 4%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #C1C1C1;
+    color: #000000;
+}
+
+select {
+    width: 80%;
+    padding: 4%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #C1C1C1;
+    margin-bottom: 3%;
+}
+
+.bloco_quadradoEtexto {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 4%;
+    gap: 2%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.azul {
+    background-color: #1976D2;
+    border: 2px solid #1976D2;
+}
+
+
+button {
+    margin-top: 2%;
+    padding: 3%;
+    width: 50%;
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.textoRecuperarSenha {
+    color: #DD4646;
+    cursor: pointer;
+}
+

@@ -30,3 +30,6 @@ def home_view(request):
 
 def perfil_view(request):
     return render(request, 'Telaperfil.html')
+
+def agenda_view(request):
+    return render(request, 'Telaagenda.html')

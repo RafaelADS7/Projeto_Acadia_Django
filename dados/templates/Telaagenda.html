@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Agenda{% endblock %}
+{% block header_title %}Agenda{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/TelaAgenda.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<section class="bloco_1">
+    <img src="{% static 'arrow_back.png' %}" alt="">
+    <h3>Abril</h3>
+    <img src="{% static 'arrow_forward.png' %}" alt="">
+</section>
+
+<section class="bloco_2">
+    <button class="botoes_da_semana">Semana</button>
+    <button class="botoes_da_semana">Mês</button>
+    <button class="botoes_da_semana">Notas</button>
+</section>
+
+<section class="bloco_3">
+    <div><h6>Seg</h6><p>14</p></div>
+    <div><h6>Ter</h6><p>15</p></div>
+    <div><h6>Qua</h6><p>16</p></div>
+    <div><h6>Qui</h6><p>17</p></div>
+    <div><h6>Sex</h6><p>18</p></div>
+</section>
+
+<section class="bloco_4">
+    <h4 class="displey_block">Aulas de hoje</h4>
+    <article class="informacoes_bloco_4">
+        <div>
+            <h4>Design UX</h4>
+            <p>Prof. Angelica Felix</p>
+            <p>Sala H10</p>
+        </div>
+        <p class="paragrafo_horario">18:10 - 19:50</p>
+    </article>
+
+    <h4 class="displey_block">Anotações</h4>
+    <article class="article_anotacoes">
+        <div class="anotacoes1"> 
+            <div class="informacoes_atividade">
+                <button class="botao_de_marcacao_tarefa_feita"></button>
+                <h4>Anotação A</h4>
+                <button class="botao_estudo">Estudo</button>
+                <button class="botao_urgente">Urgente</button>
+            </div>
+            <div><img src="{% static 'more_vert.png' %}" alt=""></div>
+        </div>
+        <p class="paragrafos_anotacoes">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <div class="footer_das_anotacoes">
+            <img src="{% static 'calendar_month.png' %}" alt="">
+            <p>Prazo: 20/04/2025</p>
+            <button class="botao_pendente">Pendente</button>
+        </div>
+    </article>
+
+    <article class="article_anotacoes">
+        <div class="anotacoes1">
+            <div class="informacoes_atividade">
+                <button class="botao_de_marcacao_tarefa_feita"></button>
+                <h4>Anotação B</h4>
+                <button class="botao_estudo">Estudo</button>
+                <button class="botao_urgente">Urgente</button>
+            </div>
+            <div><img src="{% static 'more_vert.png' %}" alt=""></div>
+        </div>
+        <p class="paragrafos_anotacoes">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <div class="footer_das_anotacoes">
+            <img src="{% static 'calendar_month.png' %}" alt="">
+            <p>Prazo: 20/04/2025</p>
+            <button class="botao_concluido">Concluido</button>
+        </div>
+    </article>
+
+    <button class="botao_de_mais">
+        <img src="{% static 'add_2.png' %}" alt="">
+    </button>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'TelaAgendascript.js' %}"></script>
+{% endblock %}
