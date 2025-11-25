@@ -1,56 +1,17 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/TelaHomeEstilo.css' %}">
-    <title> Home </title>
-</head>
-<body>
-    
-    <main>
-       <header> 
-            <img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt="">
-            <h3> Home </h3>   
-            <img class="imagensTopo" src="{% static 'img/Personagem_azul.png' %}" alt="">
-       </header>
 
-       
+{% block title %}Home{% endblock %}
 
-       <nav class="hidden" id="menu">
-            <ul>
-                <li>
-                    <img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/Personagem.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/book_5.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/content_paste_search.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/school.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/account_balance.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/link.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/emoji_events.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'img/settings.png' %}" alt="">
-                </li>
-            </ul>
-        </nav>
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/TelaHomeEstilo.css' %}">
+{% endblock %}
 
-        
+{% block header_title %}
+Home
+{% endblock %}
+
+{% block content %}
        <section class="geral">
             <section class="opcoes">
                 <button id="myButton1"> Feed </button>
@@ -82,12 +43,10 @@
             <div id="tela3" class="escondidos">Tela 3: Calendário</div>
        </section>
        
-       
+       {% endblock %}
 
-       <section></section>
-    </main>
+        {% block scripts %}
+        <script src="{% static 'js/TelaHomescript.js' %}"></script>
+        {% endblock %}
+
       
-
-    <script src="{% static 'js/TelaHomescript.js' %}"></script>
-</body>
-</html>
