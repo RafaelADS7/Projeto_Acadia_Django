@@ -8,6 +8,9 @@
     <title>Tela de Login</title>
 </head>
 <body>
+        
+
+
         <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             <img src="{% static 'img/LogoAcadia.png' %}" alt="LogoAcadia">
@@ -19,6 +22,13 @@
                 <option value="UFCG">UFCG</option>
                 <option value="UNIPLAN">UNIPLAN</option>
             </select>
+            {% if messages %}
+                <div class="mensagem-erro">
+                    {% for message in messages %}
+                    <p style="color: red; font-weight: bold;">{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
             <section class="bloco_quadradoEtexto"> 
                 <section class="quadrado" onclick="mudarCor(this)"> </section>
                 <span>Mantenha-me conectado</span>
