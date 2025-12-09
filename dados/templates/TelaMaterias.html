@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Materias{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/TelaMaterias.css' %}">
+{% endblock %}
+
+{% block header_title %}
+
+Materias
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<div class="container_usuario">
+    <button class="button_perfil"> 
+        <img id="imagem_perfil" src="{% static "img/EU.jpg" %} ">
+    </button>
+    <section>
+        <h3> Rafael Barbosa Ramos </h1>
+        <a> Analise e Desenvolvimento de Sistemas - 4° Periodo </a>
+        <a> Matricula: 123456.2023.2 </a>
+    </section>
+    
+</div>
+
+<h4> Suas Matérias </h4>
+
+<article>       
+    <div class="container_Materias" data-id="ux1">
+        <div class="container_info">
+            <h4> Design UX </h4>
+            <p> Aulas totais: 70 </p>
+            <p>Suas faltas: 4</p>
+        </div>
+        <aside>
+            <p> Cursando </p>
+        </aside>
+    </div>
+        
+    <div class="detalhes-materia" style="display: none;"></div>
+        
+    <div class="container_Materias" data-id="ux1">
+        <div class="container_info">
+            <h4> Design UX </h4>
+            <p> Aulas totais: 70 </p>
+            <p>Suas faltas: 4</p>
+        </div>
+        <aside>
+            <p> Cursando </p>
+        </aside>
+    </div>
+        
+    <div class="detalhes-materia" style="display: none;"></div>
+    
+    
+
+    <div class="container_Materias" data-id="ux1">
+        <div class="container_info">
+            <h4> Design UX </h4>
+            <p> Aulas totais: 70 </p>
+            <p>Suas faltas: 4</p>
+        </div>
+        <aside>
+            <p> Cursando </p>
+        </aside>
+    </div>
+        
+    <div class="detalhes-materia" style="display: none;"></div>
+
+    <div class="container_Materias" data-id="ux1">
+        <div class="container_info">
+            <h4> Design UX </h4>
+            <p> Aulas totais: 70 </p>
+            <p>Suas faltas: 4</p>
+        </div>
+        <aside>
+            <p> Cursando </p>
+        </aside>
+    </div>
+        
+    <div class="detalhes-materia" style="display: none;"></div>
+
+</article>
+
+
+
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/TelaMateriasscripts.js' %}"></script>
+{% endblock %}

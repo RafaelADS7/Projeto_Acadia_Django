@@ -41,6 +41,11 @@ def agenda_view(request):
     return render(request, 'Telaagenda.html')
 
 
+@login_required
+def materias_view(request):
+    return render(request, 'TelaMaterias.html')
+
+
 
 def logout_view(request):
     logout(request)

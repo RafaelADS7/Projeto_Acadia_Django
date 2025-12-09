@@ -1,13 +1,44 @@
 {% load static %}
 <nav class="hidden" id="menu">
     <ul>
-        <li><img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt=""></li>
-        <li><img src="{% static 'img/Personagem.png' %}" alt=""></li>
-        <li><img src="{% static 'img/book_5.png' %}" alt=""></li>
-        <li><img src="{% static 'img/content_paste_search.png' %}" alt=""></li>
-        <li><img src="{% static 'img/school.png' %}" alt=""></li>
-        <li><img src="{% static 'img/account_balance.png' %}" alt=""></li>
-        <li><img src="{% static 'img/link.png' %}" alt=""></li>
+        <li>
+            <img class="imagensTopo" id="menuIcon" src="{% static 'img/menu_azul.png' %}" alt="">
+        </li>
+        <li>
+            <a href="{% url 'perfil'%}">
+                <img src="{% static 'img/Personagem.png' %}" alt="">
+            </a>
+        </li>
+            
+        <li>
+            <a href="{% url 'agenda' %}">
+                <img src="{% static 'img/book_5.png' %}" alt="">
+            </a>
+        </li>
+            
+        <li>
+            <a href="{% url 'materias' %}">
+                <img src="{% static 'img/content_paste_search.png' %}" alt="">
+            </a>
+        </li>
+
+        <li>
+                <img src="{% static 'img/school.png' %}" alt="">
+        
+        </li>
+
+        <li>
+            
+                <img src="{% static 'img/account_balance.png' %}" alt="">
+            
+        </li>
+
+        <li>
+            
+                <img src="{% static 'img/link.png' %}" alt="">
+            
+        </li>
+
         <li><img src="{% static 'img/emoji_events.png' %}" alt=""></li>
         <li><img src="{% static 'img/settings.png' %}" alt=""></li>
     </ul>
